@@ -1,0 +1,14 @@
+{
+  "slug": "FermatLittleTheorem",
+  "issue": "TuriMath/fermat-little-theorem#1",
+  "tier": 1,
+  "source": "Hardy & Wright, Thm 70/71",
+  "statement_provenance": "blind-double",
+  "verdict": "proved",
+  "attempts": {"formalize_rounds": 1, "equiv": 1, "prove": 1},
+  "mathlib_lemmas": ["add_pow", "Nat.Prime.dvd_choose_self", "Finset.dvd_sum", "Finset.sum_range_succ", "Finset.sum_range_succ'", "Int.eq_nat_or_neg", "Nat.Prime.eq_two_or_odd'", "Odd.neg_pow"],
+  "calibration": true,
+  "toolchain": "leanprover/lean4:v4.36.0",
+  "mathlib_rev": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "Binomial theorem: (n+1)^p ≡ n^p+1 mod p since middle binomials are divisible by p; induction on naturals; negatives via a=-n with parity (p odd: odd power negates; p=2 handled directly). Does not use ZMod.pow_card or ZMod at all. Worked first try."
+}
